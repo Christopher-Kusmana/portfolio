@@ -8,7 +8,7 @@
   <title>About - Christopher</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <style>
-    * {
+     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -190,6 +190,19 @@
       border: 1px solid #e0e0e0;
     }
 
+    .highlight-link {
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .highlight-link:hover {
+      opacity: 0.7;
+    }
+
+    .highlight-link:hover .highlight {
+      border-color: #1a1a1a;
+    }
+
     .tags {
       display: flex;
       flex-wrap: wrap;
@@ -308,6 +321,26 @@
     }
 
     @media (max-width: 768px) {
+      body {
+        padding-top: 70px;
+      }
+
+      .nav-container {
+        padding: 15px 20px;
+      }
+
+      .nav-logo {
+        font-size: 1.2rem;
+      }
+
+      .nav-links {
+        gap: 20px;
+      }
+
+      .nav-link {
+        font-size: 0.9rem;
+      }
+
       h1 {
         font-size: 2.5rem;
       }
@@ -361,13 +394,15 @@
         Industry Experience
       </div>
       <div class="card-content">
-        This past summer, I interned at <span class="highlight">GoTo Financial</span> on the KYC Data Science team, working with state-of-the-art models to solve challenges across millions of users. I contributed to deepfake detection, OCR pipelines for document verification, foundational Indonesian speech model training, and voice-assistant systems. It was my first true exposure to production ML, pushing me to think about reliability, scalability, and real-world constraints beyond just accuracy.
+        This past summer, I interned at <a href="https://www.gotocompany.com/en" target="_blank" rel="noopener noreferrer" class="highlight-link"><span class="highlight">GoTo Financial</span></a> on the KYC Data Science team, working with state-of-the-art models to solve challenges across millions of users. I contributed to end to end ML projects ranging from deepfake detection, OCR pipelines for document verification, foundational Indonesian speech model training, and voice-assistant systems. It was my first true exposure to production ML, pushing me to think about reliability, scalability, and real-world constraints beyond just accuracy.
       </div>
       <div class="tags">
         <span class="tag">Deepfake Detection</span>
         <span class="tag">OCR Pipelines</span>
         <span class="tag">Speech Models</span>
         <span class="tag">Voice Assistants</span>
+        <span class="tag">Multimodal LLM</span>
+        <span class="tag">MLOps</span>
       </div>
     </div>
 
