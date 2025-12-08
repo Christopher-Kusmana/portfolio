@@ -116,10 +116,17 @@
     }
 
     .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* ALWAYS 2 per row on desktop */
+  gap: 30px;
+}
+
+    @media (max-width: 850px) {
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
     }
+
 
     .project-card {
       background: #ffffff;
@@ -431,10 +438,33 @@
           </a>
       </div>
     </div>
-    
+
+    <div class="project-card">
+      <div class="project-header">
+          <h3 class="project-title">Segmenta: AI Lecture Analyzer</h3>
+          <div class="tag-row">
+              <span class="tag">In Progress</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Speech-to-Text</span>
+              <span class="tag">Embeddings</span>
+          </div>
+      </div>
+  
+      <p class="project-desc">
+          Segmenta is an upcoming AI-powered tool that transforms long lecture videos into organized, 
+          digestible study materials. It will combine speech-to-text, topic segmentation, semantic embeddings, 
+          and LLM chapter generation into a single automated pipeline.
+      </p>
 
 
-
+      <div class="project-buttons">
+      <a class="btn-outline" 
+          target="_blank" 
+          rel="noopener noreferrer">
+          Coming Soon!
+      </a>
+    </div>
+  </div>
     </div>
   </div>
 
